@@ -19,15 +19,6 @@ document.getElementById("startButton");
 
 const directionControl =
 document.getElementById("directionControl");
-document
-.getElementById("startButton")
-.addEventListener(
-"click",
-function(){
-
-    startGame();
-
-    this.style.display="none";
 
 });
 
@@ -69,6 +60,10 @@ function startGame(){
 
     startTimer();
 
+   startButton.style.display="none";
+
+
+    directionControl.classList.remove("hide");
 
 }
 
