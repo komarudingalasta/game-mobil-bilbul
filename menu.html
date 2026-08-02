@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Math Racing - Menu</title>
+
+<link rel="stylesheet" href="css/menu.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>🏎️ MATH RACING</h1>
+
+        <p>
+            Operasi Bilangan Bulat
+            <br>
+            dan Operasi Hitung Campuran
+        </p>
+
+    </div>
+
+    <div class="menu">
+
+        <button onclick="mulaiGame()">
+            ▶ MULAI BERMAIN
+        </button>
+
+        <button onclick="caraMain()">
+            📖 CARA BERMAIN
+        </button>
+
+        <button onclick="peringkat()">
+            🏆 PERINGKAT
+        </button>
+
+        <button onclick="pengaturan()">
+            ⚙ PENGATURAN
+        </button>
+
+    </div>
+
+    <div class="footer">
+
+        Versi 1.0<br>
+
+        © 2026 Math Racing
+
+    </div>
+
+</div>
+
+<script>
+
+function mulaiGame(){
+
+    window.location.href="materi.html";
+
+}
+
+function caraMain(){
+
+    alert(
+`Cara Bermain
+
+1. Pilih materi.
+2. Pilih level.
+3. Mobil akan melaju.
+4. Saat mengenai tanda ❓ akan muncul soal.
+5. Jawab dengan benar untuk mendapatkan poin.`
+);
+
+}
+
+function peringkat(){
+
+    alert("Leaderboard akan tersedia pada Versi 2.");
+
+}
+
+function pengaturan(){
+
+    alert("Menu Pengaturan akan tersedia pada Versi 2.");
+
+}
+
+</script>
+
+</body>
+</html>
