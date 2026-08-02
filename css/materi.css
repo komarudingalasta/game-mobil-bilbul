@@ -1,0 +1,356 @@
+/* ==========================================
+   MATH RACING
+   MATERI.CSS
+========================================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    #4facfe,
+
+    #00f2fe,
+
+    #5cb85c
+
+    );
+
+
+}
+
+
+
+/* ==========================
+   CONTAINER
+========================== */
+
+
+.container{
+
+
+    width:95%;
+
+    max-width:500px;
+
+
+    padding:35px;
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(12px);
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.25);
+
+
+    text-align:center;
+
+
+}
+
+
+
+/* ==========================
+   TITLE
+========================== */
+
+
+.title h1{
+
+
+    color:white;
+
+
+    font-size:32px;
+
+
+    font-weight:800;
+
+
+    text-shadow:
+
+    0 5px 10px rgba(0,0,0,.3);
+
+
+}
+
+
+
+.title p{
+
+
+    margin-top:10px;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+/* ==========================
+   LIST MATERI
+========================== */
+
+
+.materi-list{
+
+
+    margin-top:30px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.materi-list button{
+
+
+    width:100%;
+
+
+    padding:18px;
+
+
+    border:none;
+
+
+    border-radius:18px;
+
+
+    cursor:pointer;
+
+
+    color:white;
+
+
+    font-size:17px;
+
+
+    font-weight:700;
+
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #ff9800,
+
+    #ff5722
+
+    );
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.25);
+
+
+    transition:.25s;
+
+
+}
+
+
+
+.materi-list button:hover{
+
+
+    transform:
+
+    translateY(-5px);
+
+
+}
+
+
+
+.materi-list button:active{
+
+
+    transform:
+
+    scale(.95);
+
+
+}
+
+
+
+/* ==========================
+   BUTTON KEMBALI
+========================== */
+
+
+.back{
+
+
+    margin-top:25px;
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:15px;
+
+
+    background:#37474f;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+@media(max-width:768px){
+
+
+    .container{
+
+
+        padding:25px;
+
+
+    }
+
+
+
+    .title h1{
+
+
+        font-size:27px;
+
+
+    }
+
+
+
+    .materi-list button{
+
+
+        font-size:16px;
+
+
+        padding:16px;
+
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .title h1{
+
+
+        font-size:24px;
+
+
+    }
+
+
+
+    .title p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+    .materi-list button{
+
+
+        font-size:15px;
+
+
+    }
+
+
+}
