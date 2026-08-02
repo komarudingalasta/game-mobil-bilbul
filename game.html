@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Math Racing</title>
+
+<link rel="stylesheet" href="css/game.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===========================
+     HUD
+=========================== -->
+
+<header class="hud">
+
+    <div class="box">
+
+        ❤️
+        <span id="life">3</span>
+
+    </div>
+
+    <div class="box">
+
+        ⭐
+        <span id="score">0</span>
+
+    </div>
+
+    <div class="box">
+
+        ⏰
+        <span id="timer">120</span>
+
+    </div>
+
+</header>
+
+<!-- ===========================
+     GAME AREA
+=========================== -->
+
+<main id="gameArea">
+
+    <!-- Jalan -->
+
+    <div id="road">
+
+        <!-- Garis Jalan -->
+
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+        <div class="line l3"></div>
+        <div class="line l4"></div>
+        <div class="line l5"></div>
+
+        <!-- Objek akan muncul di sini -->
+
+        <div id="objectContainer"></div>
+
+        <!-- Mobil -->
+
+        <div id="player">
+
+            🚗
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- ===========================
+     KONTROL
+=========================== -->
+
+<footer id="controller">
+
+<button id="leftButton">
+
+◀
+
+</button>
+
+<button id="actionButton">
+
+AKSI
+
+</button>
+
+<button id="rightButton">
+
+▶
+
+</button>
+
+</footer>
+
+<!-- ===========================
+     POPUP SOAL
+=========================== -->
+
+<div id="questionPopup" class="hide">
+
+<div class="questionBox">
+
+<h2>
+
+❓ Tantangan Matematika
+
+</h2>
+
+<p id="questionText">
+
+Soal akan muncul di sini.
+
+</p>
+
+<div id="answers">
+
+<button>A</button>
+
+<button>B</button>
+
+<button>C</button>
+
+<button>D</button>
+
+</div>
+
+<div class="questionTimer">
+
+Sisa waktu :
+
+<span id="questionTime">
+
+15
+
+</span>
+
+detik
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===========================
+     JAVASCRIPT
+=========================== -->
+
+<script src="js/game.js"></script>
+
+</body>
+
+</html>
