@@ -42,6 +42,8 @@ const objectTypes = [
 
 let gameObjects = [];
 
+let objectSpawn = true;
+
 
 // ==========================
 // MEMBUAT OBJEK
@@ -171,12 +173,13 @@ function updateObjects(){
 setInterval(
 function(){
 
-
-    if(gameRunning){
+    if(gameRunning && objectSpawn){
 
         createObject();
 
     }
+
+},1200);
 
 
 },
