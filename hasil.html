@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Math Racing - Hasil</title>
+
+<link rel="stylesheet" href="css/hasil.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <div class="header">
+
+        <h1>🏆 HASIL BALAPAN</h1>
+
+        <p>
+            Perjalanan matematikamu selesai!
+        </p>
+
+    </div>
+
+
+
+    <div class="result-box">
+
+
+        <div class="item">
+
+            ⭐ Skor
+
+            <strong id="finalScore">
+                0
+            </strong>
+
+        </div>
+
+
+
+        <div class="item">
+
+            📚 Materi
+
+            <strong id="finalMateri">
+                -
+            </strong>
+
+        </div>
+
+
+
+        <div class="item">
+
+            🏁 Level
+
+            <strong id="finalLevel">
+                -
+            </strong>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="buttons">
+
+
+        <button onclick="mainLagi()">
+
+            🔄 Main Lagi
+
+        </button>
+
+
+
+        <button onclick="menu()">
+
+            🏠 Menu Utama
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script>
+
+
+// Ambil data permainan
+
+let score =
+localStorage.getItem("lastScore") || 0;
+
+
+let materi =
+localStorage.getItem("materi") || "-";
+
+
+let level =
+localStorage.getItem("level") || "-";
+
+
+
+// Tampilkan hasil
+
+document.getElementById(
+"finalScore"
+).innerHTML = score;
+
+
+
+document.getElementById(
+"finalMateri"
+).innerHTML =
+materi;
+
+
+
+document.getElementById(
+"finalLevel"
+).innerHTML =
+level;
+
+
+
+function mainLagi(){
+
+
+    window.location.href =
+    "level.html";
+
+
+}
+
+
+
+function menu(){
+
+
+    window.location.href =
+    "menu.html";
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
