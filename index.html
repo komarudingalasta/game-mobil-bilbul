@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Math Racing</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="loading-screen">
+
+    <div class="logo">
+
+        <div class="car">🏎️</div>
+
+        <h1>MATH RACING</h1>
+
+        <p>
+            Operasi Bilangan Bulat
+            <br>
+            & Operasi Hitung Campuran
+        </p>
+
+    </div>
+
+    <div class="loading-box">
+
+        <div class="loading-bar">
+
+            <div id="progress"></div>
+
+        </div>
+
+        <span id="loadingText">
+            Loading...
+        </span>
+
+    </div>
+
+</div>
+
+<script>
+
+let progress = document.getElementById("progress");
+
+let text = document.getElementById("loadingText");
+
+let persen = 0;
+
+let loading = setInterval(function(){
+
+    persen++;
+
+    progress.style.width = persen + "%";
+
+    text.innerHTML = "Loading " + persen + "%";
+
+    if(persen >= 100){
+
+        clearInterval(loading);
+
+        setTimeout(function(){
+
+            window.location.href="menu.html";
+
+        },600);
+
+    }
+
+},30);
+
+</script>
+
+</body>
+</html>
