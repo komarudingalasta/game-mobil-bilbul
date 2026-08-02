@@ -15,7 +15,17 @@ document.getElementById("timer");
 
 const actionButton =
 document.getElementById("actionButton");
+document
+.getElementById("startButton")
+.addEventListener(
+"click",
+function(){
 
+    startGame();
+
+    this.style.display="none";
+
+});
 
 
 // ==========================
