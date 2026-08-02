@@ -13,8 +13,12 @@ const timerText =
 document.getElementById("timer");
 
 
-const actionButton =
-document.getElementById("actionButton");
+const startButton =
+document.getElementById("startButton");
+
+
+const directionControl =
+document.getElementById("directionControl");
 document
 .getElementById("startButton")
 .addEventListener(
