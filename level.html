@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Math Racing - Level</title>
+
+<link rel="stylesheet" href="css/level.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <div class="title">
+
+        <h1>🏁 PILIH LEVEL</h1>
+
+        <p>
+            Semakin tinggi level,
+            semakin menantang!
+        </p>
+
+    </div>
+
+
+
+    <div class="level-list">
+
+
+        <button onclick="pilihLevel('mudah')">
+
+            🟢 MUDAH
+
+            <span>
+                Latihan dasar
+            </span>
+
+        </button>
+
+
+
+        <button onclick="pilihLevel('sedang')">
+
+            🟡 SEDANG
+
+            <span>
+                Tantangan meningkat
+            </span>
+
+        </button>
+
+
+
+        <button onclick="pilihLevel('sulit')">
+
+            🔴 SULIT
+
+            <span>
+                Kecepatan maksimal
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+
+    <button class="back"
+    onclick="kembali()">
+
+        ⬅ Kembali
+
+    </button>
+
+
+</div>
+
+
+
+<script>
+
+
+function pilihLevel(level){
+
+
+    localStorage.setItem(
+        "level",
+        level
+    );
+
+
+    window.location.href =
+    "game.html";
+
+
+}
+
+
+
+function kembali(){
+
+
+    window.location.href =
+    "materi.html";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
