@@ -227,27 +227,6 @@ function handleObject(obj){
 
 
 
-// ==========================
-// TOMBOL AKSI
-// ==========================
-
-if(actionButton){
-
-
-    actionButton.addEventListener(
-    "click",
-    function(){
-
-
-        showQuestion();
-
-
-    });
-
-
-}
-
-
 
 // ==========================
 // SELESAI
@@ -288,7 +267,7 @@ function endGame(){
 window.onload=function(){
 
 
-    startGame();
+    stopEngine();
 
 
 };
