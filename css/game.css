@@ -943,3 +943,47 @@ body{
     }
 
 }
+
+/* ==========================
+   START BUTTON
+========================== */
+
+#startButton{
+
+    padding:18px 50px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#4caf50;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:800;
+
+}
+
+
+/* ==========================
+   ARAH
+========================== */
+
+#directionControl{
+
+    display:flex;
+
+    width:100%;
+
+    gap:20px;
+
+}
+
+
+#directionControl button{
+
+    flex:1;
+
+}
