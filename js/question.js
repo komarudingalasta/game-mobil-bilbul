@@ -249,9 +249,9 @@ function checkAnswer(index){
 
 function closeQuestion(){
 
-
     questionPopup.classList.add("hide");
 
+    startEngine();
 
 }
 
